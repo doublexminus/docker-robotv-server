@@ -16,6 +16,10 @@ echo "0.0.0.0/0" > ${CONFDIR}/svdrphosts.conf
 
 echo "UpdateChannels = ${VDR_UPDATECHANNELS}" > ${CONFDIR}/setup.conf
 
+# Update EPG
+
+echo "EPGScanTimeout = ${VDR_EPGSCANTIMEOUT}" >> ${CONFDIR}/setup.conf
+
 # DVBAPI configuration
 
 echo "dvbapi.LogLevel = 2" >> ${CONFDIR}/setup.conf
