@@ -42,7 +42,7 @@ rm -Rf opt
 docker build \
     --force-rm \
     --build-arg ROBOTV_VERSION=${ROBOTV_VERSION} \
-    -t pipelka/robotv-server:${ROBOTV_VERSION}-${DOCKER_BUILD} \
+    -t doublexminus/robotv-server:${ROBOTV_VERSION}-${DOCKER_BUILD} \
     -f ${TOP}/Dockerfile ${TOP}
 
-docker tag pipelka/robotv-server:${ROBOTV_VERSION}-${DOCKER_BUILD} pipelka/robotv-server:latest
+docker tag doublexminus/robotv-server:${ROBOTV_VERSION}-${DOCKER_BUILD} doublexminus/robotv-server:latest
