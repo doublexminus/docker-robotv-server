@@ -78,6 +78,7 @@ ENV DVBAPI_ENABLE="0" \
     ROBOTV_EPGIMAGEURL= \
     VDR_LOGLEVEL=2 \
     VDR_UPDATECHANNELS=3 \
+	VDR_EPGSCANTIMEOUT=5 \
     TZ="Europe/Vienna"
 
 RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
